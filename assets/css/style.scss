@@ -1,0 +1,135 @@
+$title-font: "Open Sauce One Regular";
+$gradient-colors: rgba(200, 109, 109, 0.65), rgba(255, 238, 142, 0.65), rgba(109, 181, 200, 0.65);
+$main-color: #f4f4f4;
+$accent-color: rgba(228, 220, 174, 0.5);
+$button-color: rgba(255, 238, 142, 0.65);
+$button-hover-color: #555;
+$button-active-color: #FF8B49;
+
+$title {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $title-font;
+    margin: 0;
+    padding: 0;
+    background-color: $main-color;
+}
+
+header {
+    font-family: "ApexNew-Medium";
+    background: linear-gradient(to right, $gradient-colors);
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+nav {
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        padding: 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $button-hover-color;
+        }
+    }
+}
+
+.content {
+    padding: 20px;
+    margin-left: 135px; // Adjust as needed
+}
+
+section {
+    max-width: 1000px;
+    margin: 1em auto;
+    padding: 1em;
+    background-color: $accent-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.viewer {
+    height: 600px;
+}
+
+.rounded-rectangle {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFE1CF;
+    border-radius: 15px;
+}
+
+.right-align {
+    float: right;
+    width: 33%;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+#resourceForm {
+    select, button {
+        flex-basis: 30%;
+        padding: 13px;
+        font-size: 15px;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Apex New', sans-serif;
+        background-color: $button-color;
+
+        button {
+            background-color: $button-active-color;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #444;
+            }
+        }
+    }
+}
+
+.navbar, .footer {
+    background: linear-gradient(to right, $gradient-colors);
+    color: #000000;
+    padding: 10px;
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+    }
+}
+
+.footer {
+    margin-top: 100px;
+    text-align: center;
+    height: 80px;
+
+    img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+    }
+}
